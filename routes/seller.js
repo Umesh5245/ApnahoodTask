@@ -3,7 +3,7 @@ const SellerController = require('../controllers/SellerController')
 const router =express.Router()
 
 router.post('/create-catalog', SellerController.createcatalog)
-router.post('/orders', SellerController.sellerorder)
+router.get('/orders', SellerController.sellerorder)
 
 
 module.exports =router
